@@ -37,5 +37,5 @@ As instruções completas de instalação e uso estão disponíveis na documenta
 
 ## 🏫 Informações Acadêmicas
 
-Projeto desenvolvido no 3º semestre do curso de **Análise e Desenvolvimento de Sistemas** – UNIFACS  
+Projeto desenvolvido para **UC** de **Sistemas Distribuídos e Mobile** no 3º semestre do curso de **Análise e Desenvolvimento de Sistemas** – UNIFACS  
 Ano: 2025

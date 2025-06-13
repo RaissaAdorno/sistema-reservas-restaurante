@@ -1,0 +1,28 @@
+PS C:\Users\raiss\Desktop\react importacao> npm create vite@latest
+Need to install the following packages:
+create-vite@6.5.0
+Ok to proceed? (y) y
+
+
+> npx
+> create-vite
+
+│
+◇  Project name:
+│  a3xavier
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Scaffolding project in C:\Users\raiss\Desktop\react importacao\a3xavier...
+│
+└  Done. Now run:
+
+  cd a3xavier    
+  npm install    
+  npm run dev    
+
+axios biblioteca para ajudar a conectar back com front

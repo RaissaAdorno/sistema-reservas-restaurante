@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum StatusMesa {
+  Disponivel
+  Pendente
+  Reservada
+}
+
+enum StatusReserva {
+  Pendente
+  Confirmado
+  Cancelado
+}
+
+model tab_usuarios {
+  id_usuario Int     @id @default(autoincrement())
+  usuario    String  @db.VarChar(20)
+  login      String  @db.VarChar(20)
+  senha      String  @db.VarChar(20)
+}
+
+model tab_mesas {
+  id_mesa       Int     @id @default(autoincrement())
+  numero_mesa   Int     @unique
+  status        StatusMesa  @default(Disponivel)
+  tab_reservas  tab_reservas[]
+}
+
+model tab_reservas {
+  id_reservas         Int      @id @default(autoincrement())
+  nome_cliente        String   @db.VarChar(50)
+  id_mesa             Int
+  quantidade_pessoas  Int
+  data_hora_reserva   DateTime
+  status              StatusReserva
+  tab_mesas           tab_mesas @relation(fields: [id_mesa], references: [id_mesa])
+  tab_relatorio       tab_relatorio[]
+  garcom              String @db.VarChar(50) @default("Não Informado")
+}
+
+model tab_relatorio {
+  id_relatorio Int         @id @default(autoincrement())
+  id_reservas  Int
+  tab_reservas tab_reservas @relation(fields: [id_reservas], references: [id_reservas])
+}

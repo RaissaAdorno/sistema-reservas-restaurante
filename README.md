@@ -2,7 +2,7 @@
 
 Este projeto consiste em uma API e interface web para o gerenciamento de reservas de mesas em restaurantes. O sistema implementa autenticação de usuários e oferece diferentes níveis de acesso:
 
-- **Atendente**: agenda, edita e cancela reservas de clientes.
+- **Atendente**: agenda e cancela reservas de clientes.
 - **Garçom**: confirma reservas e gerencia a ocupação das mesas.
 - **Gerente**: possui acesso completo ao sistema, incluindo relatórios detalhados de reservas.
 

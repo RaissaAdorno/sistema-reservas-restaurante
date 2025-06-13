@@ -20,16 +20,16 @@ Este projeto consiste em uma API e interface web para o gerenciamento de reserva
 
 ## 📄 Documentação
 
-As instruções completas de instalação e uso estão disponíveis na documentação do projeto, localizada na pasta `/relatório/documentação-projeto.pdf`.
+As instruções completas de instalação e uso estão disponíveis na documentação do projeto, localizada na pasta `/relatório/relatorio-sistema-reservas.pdf`.
 
 ---
 
 ## 👥 Equipe de Desenvolvimento
 
+- Raissa Adorno Santos da Silva
 - Leandro de Aquino Rodrigues  
 - Emanuel Santos da Silva 
 - Matheus Azevedo de Oliveira 
-- Raissa Adorno Santos da Silva
 - Pedro Ivo Barbosa Monzini 
 - Pedro Henrique Costa Damásio Matos
 
